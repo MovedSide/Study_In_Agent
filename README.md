@@ -10,11 +10,11 @@
 이 외에도 잡다한 자료나 정보들을 끄적이는 곳으로 
 
 계획
-#C++
+# C++
 못해도 9월 20까지 기본문법 마무리  ( https://modoocode.com/ 참고하여 공부 )
-#PYTHON
+# PYTHON
 나머지 9월안에 마무리 ( https://programmers.co.kr/learn/courses/2 https://programmers.co.kr/learn/courses/4008 참고하여 공부 )
-#OTHER
+# OTHER
 - autohotkey : 필요할때마다 만들어서 활용
 - github & sourcetree : 지겨울때마다 틈틈히 찾아다니기
 19.6.20 ~ 21.4.9 
