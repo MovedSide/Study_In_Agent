@@ -12,7 +12,7 @@
 계획
 # C++
 못해도 9월 20까지 기본문법 마무리  ( https://modoocode.com/ 참고하여 공부 ) 그 후 조그만 프로젝트 ( 게임만들기나 가계부작성 같은.. ) 진행해보기
-<img src="https://i.imgur.com/QYO9ntx.jpg" width="60%">
+<img src="https://i.imgur.com/QYO9ntx.jpg" width="20%">
 # PYTHON
 ~~나머지 9월안에 마무리 ( https://programmers.co.kr/learn/courses/2 https://programmers.co.kr/learn/courses/4008 참고하여 공부 )~~(C++ 하고 추후에)
 # OTHER
