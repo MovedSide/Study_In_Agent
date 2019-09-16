@@ -11,7 +11,7 @@
 
 계획
 # C++
-못해도 9월 20까지 기본문법 마무리  ( https://modoocode.com/ 참고하여 공부 ) 그 후 조그만 프로젝트 ( 게임만들기나 가계부작성 같은.. ) 진행해보기<br/>
+~~못해도 9월 20까지 기본문법 마무리~~  -> 9월에 바빠서 10월까지로 연기.. ( https://modoocode.com/ 참고하여 공부 ) 그 후 조그만 프로젝트 ( 게임만들기나 가계부작성 같은.. ) 진행해보기<br/>
 - 게임만들기(samsara)<br/>
 <img src="https://i.imgur.com/QYO9ntx.jpg" width="30%"><br/>
 ( 핸드폰 게임 내의 화면 ) (https://blindcatstudio.com/samsara/)<br/>
