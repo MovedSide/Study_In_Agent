@@ -1,21 +1,21 @@
-; Å×½ºÆ® ÆÄÀÏ
-Coordmode, Mouse, Screen ; ½ºÅ©¸°À¸·Î È­¸é È®Àå
+ï»¿; í…ŒìŠ¤íŠ¸ íŒŒì¼
+Coordmode, Mouse, Screen ; ìŠ¤í¬ë¦°ìœ¼ë¡œ í™”ë©´ í™•ì¥
 Gui, Add, Text, x13 y35 w40 h20, index : 
 Gui, Add, Edit, x60 y30 w50 h20 vcnt, 2
-Gui, Add, Text, x13 y65 w50 h20, ³¯Â¥ : 
+Gui, Add, Text, x13 y65 w50 h20, ë‚ ì§œ : 
 Gui, Add, Edit, x60 y65 w110 h20 vT2, 
-Gui, Add, Text, x13 y95 w50 h20, ÄÚµå : 
+Gui, Add, Text, x13 y95 w50 h20, ì½”ë“œ : 
 Gui, Add, Edit, x60 y90 w110 h20 vT3, 
-Gui, Add, Text, x13 y125 w50 h20, ÀÇ»ç : 
+Gui, Add, Text, x13 y125 w50 h20, ì˜ì‚¬ : 
 Gui, Add, Edit, x60 y120 w110 h20 vT4, 
-Gui, Add, Text, x13 y155 w50 h20, ÀÌ¸§
+Gui, Add, Text, x13 y155 w50 h20, ì´ë¦„
 Gui, Add, Edit, x60 y150 w110 h20 vT5, 
-Gui, Add, Text, x13 y185 w50 h20, »ı³â¿ùÀÏ
+Gui, Add, Text, x13 y185 w50 h20, ìƒë…„ì›”ì¼
 Gui, Add, Edit, x60 y180 w110 h20 vT6,
 Gui, Add, Text, x13 y210 w50 h20 vT7, 
 Gui, Add, Text, x20 y210 w50 h20 vT8, 
-Gui, Add, Text, x20 y240 w200 h20 , z:³¯Â¥x:ÄÚµåc:»çÀ¯a:´ÙÀ½Áø·á
-Gui, Add, Checkbox, vC1, °¡Á·
+Gui, Add, Text, x20 y240 w200 h20 , z:ë‚ ì§œx:ì½”ë“œc:ì‚¬ìœ a:ë‹¤ìŒì§„ë£Œ
+Gui, Add, Checkbox, vC1, ê°€ì¡±
 Gui, Add, Button, x20 y300 w110 h20, Exit
 Gui Show
 
@@ -32,7 +32,22 @@ ButtonExit:
    ExitApp
 }
 return
-
+F1::
+{
+   Hotkey,a,off
+   Hotkey,z,off
+   Hotkey,x,off
+   Hotkey,c,off
+}
+return
+F2::
+{
+   Hotkey,a,on
+   Hotkey,z,on
+   Hotkey,x,on
+   Hotkey,c,on
+}
+return
 z::
 GUI, submit, nohide
 send, %T2%
@@ -49,7 +64,7 @@ send {Enter}
 send {Enter}
 send {Tab}
 send {Tab}
-if C1 = 1 ;Ã¼Å© ÇÔ
+if C1 = 1 ;ì²´í¬ í•¨
 {
    send {down}
 }
@@ -75,14 +90,14 @@ vindex6:=10
 vindex7:=12
 vindex8:=8
 tmp := cnt
-vp1 := Exc.cells(tmp,vindex1).Value ; ³¯Â¥
-vp2 := Exc.cells(tmp,vindex2).Value ; ÄÚµå
-vp3 := Exc.cells(tmp,vindex3).Value ; ÀÌ¸§
-vp4 := Exc.cells(tmp,vindex4).Value ; »ı³â¿ùÀÏ
-vp5 := Exc.cells(tmp,vindex5).Value ; ÀÇ»ç
-vp6 := Exc.cells(tmp,vindex6).Value ; ÁøÂû»çÀ¯
-vp7 := Exc.cells(tmp,vindex7).Value ; ÁøÂû³»¿ë
-vp8 := Exc.cells(tmp,vindex8).Value ; ÁøÂû¿äÃ»ÀÚ
+vp1 := Exc.cells(tmp,vindex1).Value ; ë‚ ì§œ
+vp2 := Exc.cells(tmp,vindex2).Value ; ì½”ë“œ
+vp3 := Exc.cells(tmp,vindex3).Value ; ì´ë¦„
+vp4 := Exc.cells(tmp,vindex4).Value ; ìƒë…„ì›”ì¼
+vp5 := Exc.cells(tmp,vindex5).Value ; ì˜ì‚¬
+vp6 := Exc.cells(tmp,vindex6).Value ; ì§„ì°°ì‚¬ìœ 
+vp7 := Exc.cells(tmp,vindex7).Value ; ì§„ì°°ë‚´ìš©
+vp8 := Exc.cells(tmp,vindex8).Value ; ì§„ì°°ìš”ì²­ì
 StringReplace,vp1,vp1,-,,All
 GuiControl, , T2, %vp1%
 GuiControl, , T3, %vp2%
@@ -91,7 +106,7 @@ GuiControl, , T5, %vp3%
 GuiControl, , T6, %vp4%
 GuiControl, , T7, %vp6%
 GuiControl, , T8, %vp7%
-IfInString,vp8,°¡Á·
+IfInString,vp8,ê°€ì¡±
 {
    GuiControl,,C1,1
 }

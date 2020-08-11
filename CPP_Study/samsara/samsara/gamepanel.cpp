@@ -11,7 +11,7 @@ gamepanel::gamepanel()
 
 void gamepanel::set_edge()
 {
-	for (int i = 0; i < HEIGHT; i++)
+	for (int i = 0; i < HEIGHT; i++)	
 	{
 		for (int j = 0; j < WEIGHT; j++)
 		{
@@ -75,7 +75,7 @@ void gamepanel::set_tile(int x,int y)
 	}
 }
 void gamepanel::set_Color(unsigned short text, unsigned short back)
-{
+{	
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), text | (back<<4));
 }
 int gamepanel::canbreak()
